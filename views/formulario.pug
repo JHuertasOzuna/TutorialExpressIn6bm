@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  div(class="row")
+    h3 Formulario
+    form(class="col s12" method="post" action="/saludar")
+      div(class="row")
+        div(class="input-field col s12")
+          input(type="text" class="validate" name="nombre" id="inputNombre")
+          label(for="inputNombre") Nombre
+      div(class="row")
+        div(class="input-field col s12")
+          input(type="text" class="validate" name="apellido" id="inputApellido")
+          label(for="inputApellido") Apellido
+      div(class="row")
+        div(class="input-field col s12")
+          input(type="text" class="validate" name="comentario" id="inputComentario")
+          label(for="inputComentario") Comentario
+      div(class="row")      
+        div(class="col s12")
+          button(class="waves-effect waves-light btn" type="submit") Enviar
+  
+    
+  
